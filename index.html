@@ -168,7 +168,6 @@
           <div class="carousel-item">
             <img src="slike/pas4.jfif" alt="Pas 4" class="img-fluid gallery-image">
           </div>
-          <!-- Dodajte više slika ovdje -->
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -281,12 +280,10 @@
     </div>
   </footer>
   <script>
-// Aktiviranje karusela
 var carousel = document.querySelector('#carouselExample');
 var carouselInstance = new bootstrap.Carousel(carousel);
 
   
-    // Zaustavljanje automatskog klizanja karusela na hover
     carousel.addEventListener('mouseover', function() {
       carouselInstance.pause();
     });
