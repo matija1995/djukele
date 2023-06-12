@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dukele - Salon za pse</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+      .gallery-image {
+        height: 350px;
+        width: 400px;
+        object-fit: cover;
+        border: 2px solid black;
+        padding: 5px;
+      }
+  
+      body {
+        margin: 0;
+        padding: 0;
+      }
+  
+      .carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .carousel-inner {
+        text-align: center;
+      }
+
+
+
+  
+      header {
+        margin-top: 0;
+      }
+  
+      .navbar {
+        margin-bottom: 0;
+      }
+  
+      .logo {
+        width: 100px;
+        height: auto;
+      }
+  
+      @media (max-width: 991.98px) {
+        .logo {
+          width: 80px;
+        }
+      }
+  
+      @media (max-width: 767.98px) {
+        .logo {
+          width: 60px;
+        }
+      }
+    </style>
+  </head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#home"><img src="logo.png" alt="Dukele Salon za pse" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontakt">Kontakt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galerija">Galerija pasa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#form">Rezervacija</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="py-5">
+    <div class="container">
+      <div class="text-center">
+      </div>
+      <h1 class="text-center mt-3">Dobrodošli u Dukele</h1>
+      <p class="text-center">Salon za njegu pasa Đukele nalazi se u centru grada u Vrbik. </p>
+      <p class="text-center">Nudimo Vam usluge uređivanja pasa svih pasmina i veličina. U našem salonu Vaš pas će imati vrhunsku njegu i pažnju. </p>
+      <p class="text-center">Za nas ne postoje zločesti psi, iz iskustva smatramo da blagi pristup psu daje najbolje rezultate. Pse za vrijeme tretmana ne sputavamo i ne koristimo brnjice čak ni na zahtjev vlasnika jer smo iz dugogodišnjeg rada zaključili da su opušteniji bez ikakvih metoda sputavanja, te nam dopuste da radimo sa njima, što na kraju rezultira da odlaze kući lijepi i veseli, baš kako Vi to želite! </p>
+      <h2 class="text-center mt-5">Cjenik</h2>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Usluga</th>
+              <th>Cijena</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sisanje kratkodlake pasmine</td>
+              <td>15 €</td>
+            </tr>
+            <tr>
+              <td>Sisanje dugodlake pasmine</td>
+              <td>18 €</td>
+            </tr>
+            <tr>
+              <td>Sisanje šteneta</td>
+              <td>10 €</td>
+            </tr>
+            <tr>
+              <td>Trimanje</td>
+              <td>20 €</td>
+            </tr>
+            <tr>
+              <td>Pranje i sušenje</td>
+              <td>10 €</td>
+            </tr>
+            <tr>
+              <td>Friziranje s mašnicom</td>
+              <td>17 €</td>
+            </tr>
+            <tr>
+              <td>Izrada frizure prema želji</td>
+              <td>22 €</td>
+            </tr>
+            <tr>
+              <td>Kupanje šteneta</td>
+              <td>8 €</td>
+            </tr>
+            <tr>
+              <td>Antiparazitni tretman</td>
+              <td>7 €</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <section id="galerija" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Galerija pasa</h2>
+  
+      <div id="carouselExample" class="carousel slide d-flex" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="slike/pas1.jfif" alt="Pas 1" class="img-fluid gallery-image">
+          </div>
+          <div class="carousel-item">
+            <img src="slike/pas2.webp" alt="Pas 2" class="img-fluid gallery-image">
+          </div>
+          <div class="carousel-item">
+            <img src="slike/pas3.jfif" alt="Pas 3" class="img-fluid gallery-image">
+          </div>
+          <div class="carousel-item">
+            <img src="slike/pas4.jfif" alt="Pas 4" class="img-fluid gallery-image">
+          </div>
+          <!-- Dodajte više slika ovdje -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="buttonWrapper">
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  
+  </section>
+  <section id="form" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Rezervacija</h2>
+      <form>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="ime" class="form-label">Ime</label>
+              <input type="text" class="form-control" id="ime" placeholder="Unesite ime">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="prezime" class="form-label">Prezime</label>
+              <input type="text" class="form-control" id="prezime" placeholder="Unesite prezime">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="datum" class="form-label">Datum</label>
+              <input type="date" class="form-control" id="datum">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="usluga" class="form-label">Usluga</label>
+              <select class="form-select" id="usluga">
+                <option selected>Odaberite uslugu</option>
+                <option>Sisanje kratkodlake pasmine</option>
+                <option>Sisanje dugodlake pasmine</option>
+                <option>Sisanje šteneta</option>
+                <option>Trimanje</option>
+                <option>Pranje i sušenje</option>
+                <option>Friziranje s mašnicom</option>
+                <option>Izrada frizure prema želji</option>
+                <option>Kupanje šteneta</option>
+                <option>Antiparazitni tretman</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">Pošalji</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+  <section id="kontakt" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Kontaktirajte nas</h2>
+      <p class="text-center">Za sve upite i informacije, slobodno nas kontaktirajte:</p>
+
+      <ul class="list-unstyled text-center">
+        <li><strong>Email:</strong> info@dukele.com</li>
+        <li><strong>Telefon:</strong> +385 123 4567</li>
+        <li><strong>Adresa:</strong> Primjer ulica 1, Grad</li>
+      </ul>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.917678971458!2d15.979710176671489!3d45.77284001279246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d59b562cf905%3A0x99f2955d1049caf3!2sTVZ!5e0!3m2!1shr!2shr!4v1686484958139!5m2!1shr!2shr" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%"></iframe>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <a href="https://www.instagram.com/your_instagram" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://twitter.com/your_twitter" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://www.facebook.com/your_facebook" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+        </div>
+      </div>
+      <p class="mt-2">&copy; 2023 Dukele - Salon za pse. Sva prava pridržana.</p>
+    </div>
+  </footer>
+  <script>
+// Aktiviranje karusela
+var carousel = document.querySelector('#carouselExample');
+var carouselInstance = new bootstrap.Carousel(carousel);
+
+  
+    // Zaustavljanje automatskog klizanja karusela na hover
+    carousel.addEventListener('mouseover', function() {
+      carouselInstance.pause();
+    });
+  
+    carousel.addEventListener('mouseout', function() {
+      carouselInstance.cycle();
+    });
+  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
